@@ -17,7 +17,6 @@ const MovieSection = () => {
             const data = await request.json();
 
             setMoviesArray(data.Search)
-            console.log(data.Search);
         } catch (error) {
             console.error(error)
         }

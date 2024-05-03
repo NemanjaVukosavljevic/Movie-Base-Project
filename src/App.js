@@ -3,6 +3,7 @@ import './App.css';
 
 import Header from './Components/Header';
 import MovieSection from './Components/MovieSection';
+import ImageSlider from './Components/ImageSlider';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
 
 
   return (
-    <div className='font p-5 min-h-screen bg-gray-700'>
+    <div className='font flex flex-col justify-center items-center p-5 min-h-screen bg-gray-800'>
+        <ImageSlider />
         <Header />
         <MovieSection />
     </div>
