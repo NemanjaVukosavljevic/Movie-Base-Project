@@ -12,14 +12,19 @@ const slideImages = [
     {
         url: 'https://cdn.europosters.eu/image/hp/80594.jpg',
     },
+    {
+        url: 'https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2021/10/12202234/Dune-Part-Two-Featured.jpg',
+    },
+    {
+        url: 'https://cdn.eventfinda.co.nz/uploads/events/transformed/1693784-736759-14.jpg',
+    },
 ]
 
 const ImageSlider = () => {
     return (
-        <div className="w-[80%]">
+        <div className="w-[90%]">
             <Fade>
                 {slideImages.map((image, index) => (
-                    // style={{backgroundImage: `url(${image.url})`}}
                     <div key={index} className=" h-[25rem] bg-no-repeat">
                         <img src={image.url} alt={image.index} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
                     </div>
